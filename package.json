@@ -1,0 +1,18 @@
+{
+  "name": "proyecto-web-personal",
+  "version": "1.0.0",
+  "description": "Proyecto web personal con JavaScript, CSS y HTML",
+  "main": "index.html",
+  "keywords": [
+    "portfolio",
+    "web",
+    "personal"
+  ],
+  "author": "Alejandro García",
+  "dependencies": {
+  
+  },
+  "devDependencies": {
+
+  }
+}

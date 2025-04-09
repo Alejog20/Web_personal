@@ -1,0 +1,262 @@
+/* Paleta 2: Distopía Urbana - Cyberpunk 2077 */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #101820;
+    color: #c5c6c7;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-image: linear-gradient(180deg, rgba(16, 24, 32, 1) 0%, rgba(16, 24, 32, 0.95) 100%), 
+                      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect x="0" y="0" width="100" height="1" fill="%233D3E45" opacity="0.3"/></svg>');
+    background-repeat: repeat;
+}
+
+/* Header */
+header {
+    padding: 40px 0 20px;
+    text-align: center;
+    border-bottom: 1px solid #3D3E45;
+}
+
+#titulo {
+    font-size: 3rem;
+    color: #F706CF;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(247, 6, 207, 0.7);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #F706CF;
+}
+
+/* Navegación */
+nav {
+    margin: 20px 0;
+}
+
+#navigation {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #17E7B9;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 0;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #17E7B9;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #FD4D9F;
+}
+
+/* Secciones */
+section {
+    margin: 60px 0;
+    padding: 30px;
+    background-color: rgba(61, 62, 69, 0.2);
+    border: 1px solid #3D3E45;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #7B2FBF;
+}
+
+h2 {
+    color: #17E7B9;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #17E7B9;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+/* Imagen */
+img {
+    max-width: 250px;
+    height: 250px;
+    border-radius: 0;
+    box-shadow: 10px 10px 0 #7B2FBF;
+    border: 2px solid #17E7B9;
+    display: block;
+    margin: 0 auto 20px;
+    object-fit: cover;
+    filter: saturate(1.2);
+    transform: perspective(500px) rotateY(-5deg);
+}
+
+/* Hobbies */
+.hobbies-list {
+    list-style-position: inside;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.hobbies-list li {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    background-color: rgba(16, 24, 32, 0.7);
+    border-left: 3px solid #FD4D9F;
+    font-weight: 500;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+
+input {
+    flex: 1;
+    padding: 15px;
+    background-color: rgba(16, 24, 32, 0.8);
+    border: 1px solid #3D3E45;
+    border-bottom: 2px solid #17E7B9;
+    border-radius: 0;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+}
+
+input::placeholder {
+    color: rgba(23, 231, 185, 0.5);
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-bottom-color: #FD4D9F;
+}
+
+button {
+    background-color: #F706CF;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Orbitron', sans-serif;
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #FD4D9F;
+    transition: width 0.3s ease;
+    z-index: 1;
+}
+
+button:hover::after {
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+
+button span {
+    position: relative;
+    z-index: 2;
+}
+
+#mensaje-respuesta {
+    margin-top: 20px;
+    font-weight: 500;
+    color: #FD4D9F;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+    border-top: 1px solid #3D3E45;
+    color: #3D3E45;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    img {
+        max-width: 200px;
+        height: 200px;
+    }
+    
+    #navigation {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    form {
+        flex-direction: column;
+    }
+}
