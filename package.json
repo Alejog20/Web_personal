@@ -6,13 +6,16 @@
   "keywords": [
     "portfolio",
     "web",
-    "personal"
+    "personal",
+    "cyberpunk"
   ],
   "author": "Alejandro García",
+  "license": "Open",
   "dependencies": {
-  
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-
+    "lite-server": "^2.6.1",
+    "serve": "^14.2.1"
   }
 }
